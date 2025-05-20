@@ -1,5 +1,5 @@
 # Use a base image for the application service
-FROM ollama/ollama:0.15.3
+FROM ollama/ollama:latest
 
 # Expose port 11434 (assuming the application listens on this port)
 EXPOSE 11434
