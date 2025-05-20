@@ -1,12 +1,10 @@
 # Use the official Ollama image as the base image
-FROM ollama/ollama:latest AS builder
+FROM ollama/ollama:latest
 
 FROM alpine:latest
 
 # Set the working directory
 WORKDIR /app
-
-COPY --from=builder /app/out/server .
 
 # Expose the port Ollama uses
 EXPOSE 11434
